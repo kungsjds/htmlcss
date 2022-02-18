@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.marginPadding {
+    border: 1px solid #0f0;
+
+    /* sentido horário - Top, left, bottom, right */
+    margin: 50px 10px 10px 100px;
+    padding: 10px;
+}
+
+/* Padding é espaçamento INTERNO, dentro do conteúdo */
+
+/* Margin é espaçamento EXTERNO, fora do conteúdo */

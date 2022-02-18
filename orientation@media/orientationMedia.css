@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+}
+
+div {
+    border: 3px solid #000;
+    width: 200px;
+    height: 200px;
+}
+
+/* O orientation não trabalha com a posição real do celular. Ele trabalha com a proporção do tamanho da tela,
+   comparando qual está maior e definindo a oirentação.*/
+
+/* landscape: predominantemente horizontal */
+@media (orientation: landscape) {
+
+    body {
+        flex-direction: row;
+    }
+}
+
+/* landscape: predominantemente vertical */
+@media (orientation: portrait) {
+
+    body {
+        flex-direction: column;
+    }
+}

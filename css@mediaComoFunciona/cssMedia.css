@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #0F0;
+}
+
+table, td {
+    border: 2px solid #000;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    body {
+        background-color: #F0F;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+
+    body {
+        background-color: #00F;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    body {
+        background-color: #FF0;
+        font-size: 35px;
+    }
+}
+
+@media only print {
+
+    h1 {
+        display: none;
+    }
+
+    table, td {
+        border: none;
+        font-size: 50px;
+    }
+}
+
+@media only screen {
+
+    h1 {
+        font-size: 60px;
+        color: #F0F;
+    }
+}
+
+@media all {
+
+    h1 {
+        background-color: #000;
+    }
+}

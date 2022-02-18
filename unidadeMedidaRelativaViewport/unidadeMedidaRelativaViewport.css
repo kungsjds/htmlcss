@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    margin: 50px;
+}
+
+.box {
+    background-color: #999;
+    height: 50vh;
+    width: 100vw;    
+    /* Viewpoint, vh e vw são baseados no espaço total da tela inteira que o usuário pode ver e usar, 
+       aplicando o tamanho em % com base nesse tamanho total */
+
+    /* Não é muito utilizado, pois não é confiável */
+    /* vmax verifica entra a altura e a largura, qual tem o tamanho maior e aplica a % do tamanho */
+    /* vmin verifica entra a altura e a largura, qual tem o tamanho menor e aplica a % do tamanho */
+    /* height: 50vmax;
+    width: 50vmax;  */
+}

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+.box {
+    font-size: 20px;
+    color: blue;
+}
+
+.box h1 {
+   font-size: inherit;
+   color: inherit;
+}
+
+/* inherit herda as propriedades do elemento em que ele está contido */

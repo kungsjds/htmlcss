@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    background-color: #DDD;
+    padding: 10px;
+    height: 600px;
+
+    /* tag flex-wrap: Irá incluir o restante dos elementos na linha de baixo, caso o tamanho da largura chegue no limite, 
+       se não irá diminuir o tamanho do elemento */
+    /* tag flex-flow: É a junção da tag flex-direction e flex-wrap, basta informar o valor delas uma ao lado da outra */    
+    flex-flow: row nowrap;
+    
+    /* O justify-content alinha na direção em que está sendo exibida, se estiver com o flex-flow em row, por exemplo, irá alinhar na linha(horizontalmente), se estiver
+       como column, irá alinhar na coluna (verticalmente) */
+    justify-content: center;
+
+    /* justify-content: flex-start, irá se alinhar no começo, da direção em que está, horizontalmente ou verticalmente */
+    /*justify-content: flex-start;*/
+
+    /* justify-content: flex-end, irá se alinhar no final, da direção em que está, horizontalmente ou verticalmente */
+    /*justify-content: flex-end;*/
+
+    /* justify-content: space-around, irá alinhar os elementos com o mesmo espaçamento entre todos eles. */
+    /*justify-content: space-around;*/
+
+    /* justify-content: space-between irá alinhar com o primeiro item ficando colado no inicio da direção(horizontal ou vertical),
+       o último item ficando colado no final da direção e o restante dos itens entre eles terão o mesmo espaçamento etre eles. */
+    /*justify-content: space-between;*/
+
+    /* O align-items alinha na direção contrária, se estiver em column, ele irá alinhar horizontalmente,
+       se estiver em row, ele irá alinhar verticalmente. */
+
+    /* Todas as propriedades acima do justifu-content é exatamente a mesma para o align-items */
+    align-items: flex-end;
+}
+
+.container div {        
+    background-color: #F00;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    height: 200px;
+}

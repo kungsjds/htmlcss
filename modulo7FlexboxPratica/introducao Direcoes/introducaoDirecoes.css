@@ -1,0 +1,42 @@
+:root {
+    --bd-color-padrao: #DDD;
+    --bd-color-secundario: #F00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container, .menu, .containerRodape {
+    background-color: var(--bd-color-padrao);
+    display: flex;
+    margin: 10px; 
+}
+
+.container {
+    flex-direction: column;
+}
+
+.containerRodape {
+    flex-direction: row-reverse;
+}
+
+div {
+    flex: 1;
+    background-color: var(--bd-color-secundario);
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.menuDiv {
+    flex: 3;
+}
+
+.rodapeDiv {
+    flex: 2;
+}

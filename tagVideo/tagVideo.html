@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+        <title>Página de Teste</title>
+        <link rel="stylesheet" href="tagVideo.css" />
+    </head>
+    <body>
+        <!-- Vídeo é um arquivo interno utilizado. iFrame é para arquivos externos, no caso vídeos, como do youtube, por exemplo.
+
+             Obs: Politica de autoplay alterada, para funcionar precisa também do atributo "muted".
+
+            Obs: Aparentemente não precisa mais utilizar source, pode utiliza tudo diretamente na tag video.
+            <video src="videos/teste.mp4" type="video/mp4" width="500" height="275" controls autoplay muted></video> 
+        
+            a tag vídeo suporta os tipos: mp4, ogg e webm-->
+
+        <video width="719" height="450" controls autoplay muted loop preload>
+            <source src="videos/teste.mp4" type="video/mp4" />
+        </video>
+    </body>
+</html>

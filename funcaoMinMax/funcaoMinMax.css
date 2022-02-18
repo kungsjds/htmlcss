@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    /* O max pega o maior valor e o min pega o menor valor */
+    
+    /* width: max(50%, 300px); */
+    width: min(50%, 300px);
+}

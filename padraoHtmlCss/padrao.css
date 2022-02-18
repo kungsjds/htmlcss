@@ -1,0 +1,10 @@
+/* asteristico aplica para todos os elementos que tiverem na tela */
+* {
+    /* border-box = não soma o padding e border no widht/height dos elementos */
+    box-sizing: border-box;
+}
+
+body {
+    /* Retirar a margem da página */
+    margin: 0px;
+}

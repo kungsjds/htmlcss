@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+ body {
+     margin: 0px;
+ }
+
+ header {
+     background-color: #555;
+     min-height: 100px;
+ }
+
+ .container {
+     display: flex;
+     min-height: 740px;
+ }
+
+ aside {
+     width: 200px;
+     background-color: #888;
+ }
+
+ section {     
+     flex: 1;
+     background-color: #999;
+ }
+
+ footer {
+     background-color: #555;
+     min-height: 100px;
+ }
+
+ address {
+     color: white;
+     font-style: normal;
+ }
+

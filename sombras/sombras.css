@@ -1,0 +1,48 @@
+@keyframes animacaoColorBoxShadow {
+    0% {box-shadow:  0px 0px 30px #0F0;}
+    25% {box-shadow:  0px 0px 30px #0FA;}
+    50% {box-shadow:  0px 0px 30px #AF0;}
+    75% {box-shadow:  0px 0px 30px rgb(140, 243, 6);}
+    100% {box-shadow:  0px 0px 30px #6f8;}
+}
+
+@keyframes animacaoColorTextShadow {
+    0% {text-shadow: 0px 0px 30px #00F;}
+    25% {text-shadow: 0px 0px 30px #F0F;}
+    50% {text-shadow: 0px 0px 30px #0FF;}
+    75% {text-shadow: 0px 0px 30px #A0F;}
+    100% {text-shadow: 0px 0px 30px #0AF;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 300px;
+    box-shadow: 0px 0px 30px #0F0;
+    animation-duration: 4s;
+    animation-name: animacaoColorBoxShadow;
+    animation-iteration-count: infinite;
+}
+
+.shadowText {
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 50px;
+    color: green;
+    text-shadow: 0px 0px 30px #0F0;    
+    animation-name: animacaoColorTextShadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

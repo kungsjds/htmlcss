@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.link {
+    color: #0f0;
+}
+
+/* hover: Aplica o efeito informado quando passar o cursor em cima do elemento */
+.link:hover {
+    color: #000;
+}
+
+/* visited: Aplica o efeito se o link já foi clicado/visitado antes */
+.link:visited {
+    color: #931;
+}

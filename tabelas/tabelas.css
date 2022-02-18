@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Chilanka';
+}
+
+body {
+    margin: 0px;
+}
+
+div {
+    margin: 50px;
+}
+
+table{
+    width: 600px;    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #CCC;
+}
+
+tr td:hover {
+    background-color: #CCC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #EEE;
+}

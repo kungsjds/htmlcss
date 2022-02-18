@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+p {
+    color: #00f;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    /* Caso não tenha uma fonte, aplica a próxima */
+    font-family: Helvetica, serif;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;    
+    color: #000;
+}
+
+a:hover {
+    text-shadow: 0px 0px 50px #f00;
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+#transform {
+    text-transform: uppercase;
+}
+
+#spacing {
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+#lineheight {
+    line-height: 50px;
+}
+
+#shadow {
+    text-shadow: 0px 0px 50px #f00;
+}

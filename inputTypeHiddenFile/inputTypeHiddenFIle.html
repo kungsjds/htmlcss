@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Página de Teste</title>
+        <link rel="stylesheet" href="inputTypeHiddenFile.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Redacted+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Página de Teste de Input Type Hidden e File</h1>
+
+        <form method="GET" action="blablabla.php">
+            <!-- Normalmente informado logo abaixo do form. É um campo não visivel ao usuário, que envia o valor
+                 definido a ele, junto ao formulário quando enviar. Normalmente utilizado para IDs, por exemplo. -->
+            <input type="hidden" name="country" value="USA" />            
+
+            <fieldset>                
+                <legend>Dados Pessoais</legend>
+          
+                <label>
+                    Primeiro Nome:<br/>
+                    <input type="text" name="firstname" required minlength="2" maxlength="4" />
+                </label>
+
+                <label>
+                    Sobrenome:<br/>
+                    <input type="text" name="lastname" minlength="2" maxlength="4" />
+                </label>
+
+                <label>
+                    Idade:<br/>
+                    <input type="number" name="age" step="2" required />
+                </label>
+
+                <label>
+                    Data de nascimento:<br/>
+                    <input type="date" name="birthdate" required min="2021-12-15" max="2021-12-16" />
+                </label>
+
+                <label>
+                    E-mail:<br/>
+                    <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="exemplo@exemplo.com" />
+                </label>
+
+                <label>
+                    Foto:<br />
+                    <input type="file" name="photo" accept="image/*" />
+                </label>
+             
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>                
+                
+                <label>
+                    Nome da empresa:<br/>
+                    <input type="text" name="companyname" />
+                </label>
+
+                <label>
+                    Cargo na empresa:<br/>
+                    <input type="text" name="companyjobtitle" />
+                </label>
+                
+            </fieldset>
+
+            <button>Cadastrar</button>
+            
+        </form>
+    </body>
+</html>

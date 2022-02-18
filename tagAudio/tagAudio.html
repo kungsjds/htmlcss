@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+        <title>Página de Teste</title>
+        <link rel="stylesheet" href="tagAudio" />
+    </head>
+    <body>
+        <!-- Obs1: Politica de autoplay alterada, para funcionar precisa também do atributo "muted".
+
+             Obs2: Aparentemente não precisa mais utilizar source, pode utilizar tudo diretamente na tag audio.
+             <audio src="audios/amor.ogg" type="audio/ogg" controls muted autoplay preload loop></audio> 
+        
+             a tag audio suporta os tipos: mp3(type="audio/mpeg"), ogg e wav-->
+       
+        <audio controls muted autoplay preload loop>
+            <source src="audios/amor.ogg" type="audio/ogg" />
+        </audio>
+    </body>
+</html>

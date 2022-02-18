@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+img {
+    width: 400px;
+    height: 400px;
+
+    /* Mais utilizado, corta a imagem redimencionada */
+    object-fit: cover;
+
+    /* Só corta a imagem sem redimencionar */
+    /* object-fit: none; */
+
+    /* Redimenciona a imagem dentro da área total do tamanho dela */
+    /* object-fit: scale-down; */
+
+    /* Redimenciona a imagem dentro da área total do tamanho dela */
+    /* object-fit: contain; */
+
+    /* Padrão caso não informe nenhum object-fit. Redimenciona a imagem, porém não mantém a qualidade */
+    /* object-fit: fill; */    
+}

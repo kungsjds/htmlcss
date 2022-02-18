@@ -1,0 +1,73 @@
+/* As cores são em RGB = Red, Green e Blue  */
+#titulo {
+    /* CORES EM HEXADECIMAL */
+    color: #ff0056
+
+    /* Forma do hexadecimal */
+    /* Vai de 0 a 9 e de A até F. Sendo as letras de maior valor, FF = 255 / 00= 0*/
+    2 = red
+    2 = green
+    2 = blue
+    6 = red green blue = RGB
+
+    /* Pode resumir se for uma cor simples. Ele irá reprtir cada uma 2x */
+    #f00
+
+    F = FF
+    0 = 00
+    0 = 00
+    RGB = 255, 0, 0 = red;
+
+/* ----------------------------------------------------------------------- */
+
+    /* CORES EM RGB */
+
+    /* Vai de 0 até 255, bytes */
+    background-color: rgb(100, 50, 50)     
+
+    RGB
+    R = red
+    G = green
+    B = blue
+
+    R = 0%
+    G = 0%
+    B = 0%
+    RGB = black
+
+    R = 100%
+    G = 100%
+    B = 100%
+    RGB = white
+
+    R = 100%
+    G = 0%
+    B = 0%
+    RGB = red;
+
+    /* ----------------------------------------------------------------------- */
+
+    /* Cores em hsl */
+
+    background-color: hsl(100%, 50%, 30%);
+
+    /* ----------------------------------------------------------------------- */
+
+    /* Cores em hsl, definida em % */
+
+    background-color: hsl(100%, 50%, 30%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: #F00;
+}
+
+h1 {
+    border: 2px solid currentColor;
+    background-color: rgba(55, 20, 255, 0.5);
+}

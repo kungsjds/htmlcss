@@ -1,0 +1,70 @@
+:root {
+    --transicao-padrao: all 1s linear;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: green;
+    transition: var(--transicao-padrao);
+}
+
+.container:hover {
+    background-color: #AFA;
+    width: 500px;
+    height: 500px;
+}
+
+.link {
+    color: #000;
+    transition: var(--transicao-padrao);
+}
+
+.link:hover {
+    color: #F00;
+}
+
+.ball {
+    margin: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: cornflowerblue;
+    border: 2px solid #999;
+    transition: var(--transicao-padrao);
+    animation: bounce 1s infinite alternate;
+    /*animation: fadein 1s infinite alternate;*/
+}
+
+.ball:hover {
+    background-color: darkblue;
+    animation-play-state: paused;
+}

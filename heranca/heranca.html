@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Página de Teste</title>
+        <link rel="stylesheet" href="heranca.css" />
+
+        <style type="text/css">
+            .container {
+                color: #0F0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Página de Teste de Herança</h1>
+
+        <!-- Cascata: Começa pelo externo, no caso o CSS, depois passa pelo style definido no HEAD e depois
+             no próprio elemento -->
+        <div id="idespecificidade" class="classespecificidade" style="color: blue;" >
+            Este texte é um outro exemplo
+        </div>
+
+        <div class="container">
+            Esse <strong>texto</strong> é uma herança
+        </div>
+    </body>
+</html>

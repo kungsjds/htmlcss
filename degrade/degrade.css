@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.degrade {
+    width: 500px;
+    height: 200px;
+    /* 90deg é o grau da posição onde irá ser aplicado o degrade, podendo ser -90deg para inverter o lado */
+    background: linear-gradient(90deg, white, blue);
+
+    /* Proteções para funcionar em todos os navegadores */
+    /* Sempre utilizar as proteções para os navegadores */
+    /*mozila firefox*/
+    background: -moz-linear-gradient(90deg, white, blue);
+
+    /* opera */
+    background: -o-linear-gradient(90deg, white, blue);
+
+    /* safari */
+    background: -webkit-linear-gradient(90deg, white, blue);
+}
