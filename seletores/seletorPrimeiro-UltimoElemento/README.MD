@@ -1,7 +1,7 @@
 <strong>
 <h1>Como selecionar o Primeiro e Último elemento no CSS.</h1>
     
-<h2>Obs. É muito utilizado em Menus e tabelas. Para plicar uma borda somente na primeira e última div, por exemplo.</h2>
+<h2>Obs. É muito utilizado em Menus e tabelas. Para aplicar uma borda somente na primeira e última div, por exemplo.</h2>
 
 <h3>Exemplo:</h3>
     

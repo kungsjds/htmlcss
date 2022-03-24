@@ -25,22 +25,22 @@ input[type=password]  {
     background-color: red;
 }
 
-/* Nomes criados pelo programador, deve ser incluído com "". Como names, value, etc. Tudo que precisa definir um nome e já não é do próprio HTML */
+/* Nomes de atributos criados, devem ser incluídos entre "". Como names, value, etc. Tudo que precisa definir um nome e já não é do próprio HTML */
 [name="usuario"] {
     border-radius: 50%;
 }
 
-/* Utilizando o ^= verifica o valor informado entre "" no início do href, e quem tiver irá aplicar o css */
+/* Utilizando o ^= verifica o valor informado entre "" no início do href(ou o atributo que for informado), e quem tiver irá aplicar o css */
 [href^="https:"] {
     background-color: #b7b7b7;
 }
 
-/* Utilizando o *= verifica o valor informado entre "" em qualquer parte do href, e quem tiver irá aplicar o css */
+/* Utilizando o *= verifica o valor informado entre "" em qualquer parte do href(ou o atributo que for informado), e quem tiver irá aplicar o css */
 [href*="tecnologia"] {
     background-color: #171717;
 }
 
-/* Utilizando o $= verifica o valor informado entre "" no final do hrefm, e quem tiver irá aplicar o css */
+/* Utilizando o $= verifica o valor informado entre "" no final do href(ou o atributo que for informado), e quem tiver irá aplicar o css */
 [href$="anos/"] {
     background-color: #9c9c9c;
 }
