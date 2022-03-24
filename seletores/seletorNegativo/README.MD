@@ -1,26 +1,26 @@
 <strong>
 
-    Como aplicar um CSS aos elementos, menos para os elementos informados
+<h1>Como aplicar um CSS aos elementos, menos para os elementos informados</h1>
 
-    --HTML--
+<p>--HTML--</P>
 
-<div>Div</div>
+<!-- <div>Div</div> -->
 
-<p>Parágrafo</p>
+<!-- <p>Parágrafo</p> -->
 
-<a href="">Link</a>
+<!-- <a href="">Link</a> -->
 
 
-    --CSS--
+<p>--CSS--</P>
 
-    Obs. colocar body antes, caso vá aplicar em tudo, pois o body também é um elemento e irá ser aplicado nele 
+<p>Obs. colocar body antes, caso vá aplicar em tudo, pois o body também é um elemento e irá ser aplicado nele </p>
 
-    Aplica o css para todos, menos os que forem informados no () do :not 
+<p>Aplica o css para todos, menos os que forem informados no () do :not </p>
 
 body :not(p) {
     background-color: red;
 }
 
-    Irá aplicar um background vermelho para a div e o link, menos para o parágrafo.
+<p>Irá aplicar um background vermelho para a div e o link, menos para o parágrafo.</p>
 
 </strong>

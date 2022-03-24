@@ -1,21 +1,21 @@
 <strong>
-    Como selecionar o Primeiro e Último elemento no CSS.
+<h1>Como selecionar o Primeiro e Último elemento no CSS.</h1>
     
-    Obs. É muito utilizado em Menus e tabelas. Para plicar uma borda somente na primeira e última div, por exemplo.
+<p>Obs. É muito utilizado em Menus e tabelas. Para plicar uma borda somente na primeira e última div, por exemplo.</p>
 
-    Exemplo:
+<p>Exemplo:</p>
 
-    HTML
+<p>HTML</p>
 
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+<!-- <div></div>
+     <div></div>
+     <div></div>
+     <div></div> -->
 
     
-    CSS
+<p>CSS</p>
     
-    Irá selecionar a primeira div e aplicar o css informado.
+<p>Irá selecionar a primeira div e aplicar o css informado.</p>
 
 div:first-child {
     border-top-left-radius: 20px;
@@ -24,7 +24,7 @@ div:first-child {
 
 
 
-    Irá selecionar a última div e aplicar o css informado.
+<p>Irá selecionar a última div e aplicar o css informado.</p>
 
 div:last-child {
     border-bottom-left-radius: 20px;
