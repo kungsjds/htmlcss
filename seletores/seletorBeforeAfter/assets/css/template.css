@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+span {
+    background-color: #00FF00;
+    padding: 20px;
+}
+
+
+/* OBS: Too Before e After tem que ter um (content). Para utilizar o content vazio, basta informar display: inline-block. */
+
+/* Before, aplica um style antes do elemento informado */
+span::before {
+    content: "";
+    display: inline-block;
+    background-color: #FF0000;
+    width: 30px;
+    height: 30px;
+}
+
+/* After, aplica um style depois do elemento informado */
+span::after {
+    content: "";
+    display: inline-block;
+    background-color: #FF0000;
+    width: 30px;
+    height: 30px;
+}

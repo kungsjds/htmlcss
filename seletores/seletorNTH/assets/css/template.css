@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Pode ser utilizado em menus. Para colocar um background-image diferente em cada menu */
+
+
+/* Seleciona o elemento 2(ou o valor que for informado), de cima para baixo. */
+div:nth-child(2) {
+    background: #FF0000;
+}
+
+/* Seleciona o elemento 2(ou o valor que for informado), de baixo para cima. */
+div:nth-last-child(2) {
+    background-color: #0000FF;
+}
