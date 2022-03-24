@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Obs. colocar body antes, caso vá aplicar em tudo, pois o body também é um elemento e irá ser aplicado nele */
+/* Aplica o css para todos, menos os que forem informados no () do :not */
+body :not(p) {
+    background-color: red;
+}

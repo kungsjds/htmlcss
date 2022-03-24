@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    padding: 0px;
+}
+
+div {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+/* É muito utilizado em Menus, para deixar somente as bordas arredondadas. E em tabelas. */
+
+
+/* Aplica o css no primeiro elemento, dentre os elementos que foi informado, como no exemplo as divs */
+div:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Aplica o css no último elemento, dentre os elementos que foi informado, como no exemplo as divs */
+div:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

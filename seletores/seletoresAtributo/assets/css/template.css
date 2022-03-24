@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Definir o atributo que irá aplicar o css pelo "[...]" */
+
+[type=text] {
+    display: block;
+}
+
+input[type=password]  {
+    border: 2px solid blue;
+}
+
+[href] {
+    display: block;
+}
+
+[href="#teste"] {
+    background-color: red;
+}
+
+/* Nomes criados pelo programador, deve ser incluído com "". Como names, value, etc. Tudo que precisa definir um nome e já não é do próprio HTML */
+[name="usuario"] {
+    border-radius: 50%;
+}
+
+/* Utilizando o ^= verifica o valor informado entre "" no início do href, e quem tiver irá aplicar o css */
+[href^="https:"] {
+    background-color: #b7b7b7;
+}
+
+/* Utilizando o *= verifica o valor informado entre "" em qualquer parte do href, e quem tiver irá aplicar o css */
+[href*="tecnologia"] {
+    background-color: #171717;
+}
+
+/* Utilizando o $= verifica o valor informado entre "" no final do hrefm, e quem tiver irá aplicar o css */
+[href$="anos/"] {
+    background-color: #9c9c9c;
+}
