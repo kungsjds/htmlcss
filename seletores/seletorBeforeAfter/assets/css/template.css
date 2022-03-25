@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 20px;
     padding: 0px;
     text-align: center;
 }
@@ -32,4 +32,48 @@ span::after {
     background-color: #FF0000;
     width: 30px;
     height: 30px;
+}
+
+div {
+    display: inline-block;
+    background-color: #0000FF;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
+/* Aplicando o triângulo do balão ao lado da div, porém, com a ponta do triângulo apontando para baixo*/
+.ballonOne::after {
+    content: "";
+    display: inline-block;    
+    position: absolute;
+    top: 35px;
+    border: 20px solid;
+    border-color: #0000FF transparent transparent transparent;
+
+}
+
+/* OBS: border-color funciona em sentido horário, sendo: cima, direita, baixo, esquerda. */
+
+/* Aplicando o triângulo do balão ao lado da div, com a ponta do triângulo apontando para a direita*/
+.ballonTwo::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    margin-left: 18px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #0000FF;
+}
+
+/* Aplicando o triângulo do balão abaixo da div, com a ponta do triângulo apontando para baixo*/
+.ballonThree::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    border: 20px solid;
+    border-color: #0000FF transparent transparent transparent;
 }
