@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.estilo {
+    width: 500px;
+    height: 60px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #FF0000;
+    margin: 20px;
+}
+
+/* Placeholder para todos os navegadores modernos */
+.estilo::placeholder {
+    color: #FF0000;
+}
+
+/* Placeholder para: Webkit, Blink, Edge */
+.estilo::-webkit-input-placeholder {
+    color: #FF0000;
+}
+
+/* Firefox 4 ao 18 */
+.estilo:-moz-placeholder {
+    color: #FF0000;
+}
+
+/* Firefox 19+ */
+.estilo::-moz-placeholder {
+    color: #FF0000;
+}
+
+/* IE 10 e 11 */
+.estilo:-ms-input-placeholder {
+    color: #FF0000;
+}
+
+/* Microsoft Edge */
+.estilo::-ms-input-placeholder {
+    color: #FF0000;
+}
