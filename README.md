@@ -203,3 +203,13 @@ Em um repositório clonado, não conseguirá fazer push pro repositório remoto.
 8 - Colocar o comentário sobre a alteração, o que foi feito, etc. Depois é só clicar em "Create pull request".
 
 Será enviado para o repositório original a solicitação e poderá ser aceita ou não pelo criadores do repositório.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<strong>Alterando a URL do repositório remoto</strong>
+
+Executar o comando no git:
+
+git remote set-url origin https://github.com/novaURL
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
