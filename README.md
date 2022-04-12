@@ -203,3 +203,16 @@ Em um repositório clonado, não conseguirá fazer push pro repositório remoto.
 8 - Colocar o comentário sobre a alteração, o que foi feito, etc. Depois é só clicar em "Create pull request".
 
 Será enviado para o repositório original a solicitação e poderá ser aceita ou não pelo criadores do repositório.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<strong>Alterando o nome de um branch local</strong>
+<strong>Basta digitar o comando abaixo no painel do git, cmd.</strong>
+
+<strong>Alterar o nome da branch em que está setada</strong>
+git branch -m "novo nome".
+
+<strong>Alterar o nome de uma outra branch, que não está setada agora</strong>
+git branch -m "nome antigo" "novo nome"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
