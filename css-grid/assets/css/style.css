@@ -1,24 +1,40 @@
 .container {
     display: grid;
+    /* width: 600px; */
+    /* A propriedade fr só pode ser utilizada em grids e ela representa fração, é uma fração do espaço disponível na grid. 
+    Por exemplo, se todas as colunas forem definidas com 1fr, todas terão o mesmo temanho.
+    Se definir 1fr a primeira e 2fr a segunda, essa terá 2x o tamanho da primeira coluna que é 1fr.*/
+    /* grid-template-columns: 1fr 2fr 2fr; */
 
     /*       C = Column     C1    C2   C3*/
-    grid-template-columns: 100px auto 200px; /*Define a quantidade de colunas, com o tamanho, podendo ser auto, para o tamanho ser definido automaticamente.*/
+    /*grid-template-columns: 100px auto 200px;*/ /*Define a quantidade de colunas, com o tamanho, podendo ser auto, para o tamanho ser definido automaticamente.*/
 
     /*       R = Row     R1    R2   R3     R4*/
-    grid-template-rows: 200px 100px 300px auto; /* Quantidade de linhas é indefinido, pois muda de acordo com a quantidade, diferente da coluna. 
+    /*grid-template-rows: 200px 100px 300px auto;*/ /* Quantidade de linhas é indefinido, pois muda de acordo com a quantidade, diferente da coluna. 
                                                 Por isso a grid é definida pela coluna e depois ajustada pela quantidade de linhas. */
 
-    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* X = Quantidade de vezes que será repetido. T = Tamanho dos elementos que serão criados, podendo definir mais de um.
+       No exemplo abaixo, serão criados 6 colunas, pois como passou 2 tamanhos, ele irá criar as 2 colunas, sendo a primeira com 1fr e a 
+       segunda com 100px, 3 vezes. */
+                               /* X     T */
+    /* grid-template-columns: repeat(3, 1fr 100px); */
     
+
+    /* O auto-fill, irá criar as colunas até a quantidade que couber dentro do tamanho do elemento, podendo aumentar ou diminuir. */
+    grid-template-columns: repeat(auto-fill, 200px);
+
+
            /*Linha Coluna*/
-    grid-gap: 20px 20px; /* Obsoleto, descontinuado.  */
+    grid-gap: 10px 10px; /* Obsoleto, descontinuado.  */
     /* Espaçamento entre os elementos da grid. */
     /* A mesma função do grid-gap. Porém alguns navegadores não tem suporte para essa tag ainda. */
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .item {
-    background-color: blue;
+    background-color: black;
+    box-shadow: 0px 0px 5px purple;
     padding: 20px;
     border-radius: 10px;
     color: #FFF;
