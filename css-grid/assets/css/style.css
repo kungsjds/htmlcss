@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+
+    /*       C = Column     C1    C2   C3*/
+    grid-template-columns: 100px auto 200px; /*Define a quantidade de colunas, com o tamanho, podendo ser auto, para o tamanho ser definido automaticamente.*/
+
+    /*       R = Row     R1    R2   R3     R4*/
+    grid-template-rows: 200px 100px 300px auto; /* Quantidade de linhas é indefinido, pois muda de acordo com a quantidade, diferente da coluna. 
+                                                Por isso a grid é definida pela coluna e depois ajustada pela quantidade de linhas. */
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    
+           /*Linha Coluna*/
+    grid-gap: 20px 20px; /* Obsoleto, descontinuado.  */
+    /* Espaçamento entre os elementos da grid. */
+    /* A mesma função do grid-gap. Porém alguns navegadores não tem suporte para essa tag ainda. */
+    gap: 20px;
+}
+
+.item {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 20px;
+}
