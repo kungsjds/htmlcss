@@ -206,6 +206,16 @@ Será enviado para o repositório original a solicitação e poderá ser aceita 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<strong>Alterando o nome de um branch local</strong>
+<strong>Basta digitar o comando abaixo no painel do git, cmd.</strong>
+
+<strong>Alterar o nome da branch em que está setada</strong>
+git branch -m "novo nome".
+
+<strong>Alterar o nome de uma outra branch, que não está setada agora</strong>
+git branch -m "nome antigo" "novo nome"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <strong>Alterando a URL do repositório remoto</strong>
 
 Executar o comando no git:
