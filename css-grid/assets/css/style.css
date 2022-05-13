@@ -1,3 +1,7 @@
+body {
+    background-color: #171717;
+}
+
 .container {
     display: grid;
     /* width: 600px; */
@@ -22,14 +26,29 @@
     
 
     /* O auto-fill, irá criar as colunas até a quantidade que couber dentro do tamanho do elemento, podendo aumentar ou diminuir. */
-    grid-template-columns: repeat(auto-fill, 200px);
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+
+    /* No exemplo abaixo, as colunas terão uma largura minima de 200px e o máximo será de acordo com o tamanho da tela, sendo que todas terão o mesmo tamanho, pois terão 1fr(fração) da tela cada. */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+    /* O "auto" rows aplica os efeitos em todas as linhas que tiverem na grid. */
+    /* O minmax, define um valor minimo e um valor máximo para a função que foi passado. */
+    /* No exemplo abaixo, as linhas terão uma altura mínima de 100px e o máximo é flexível, de acordo com o conteúdo que tiver dentro(auto)*/
+    grid-auto-rows: minmax(100px, auto);
 
 
            /*Linha Coluna*/
-    grid-gap: 10px 10px; /* Obsoleto, descontinuado.  */
+    grid-gap: 30px 30px; /* Obsoleto, descontinuado.  */
     /* Espaçamento entre os elementos da grid. */
+
     /* A mesma função do grid-gap. Porém alguns navegadores não tem suporte para essa tag ainda. */
     /* gap: 20px; */
+
+    height: 100vh;
+
+    /* Posicionamentos para a grid dentro do container. Não é muito utilizado, normalmente a grid fica com os tamanhos flexíveis */
+    justify-content: center;
+    align-content: center;
 }
 
 .item {
@@ -37,6 +56,10 @@
     box-shadow: 0px 0px 5px purple;
     padding: 20px;
     border-radius: 10px;
-    color: #FFF;
+    color: #FFF;;
     font-size: 20px;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 20px purple;
 }
