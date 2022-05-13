@@ -65,16 +65,29 @@ body {
 }
 
 .item2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* Funciona da mesma forma que definir separadamente o start e end, porém é mais facil e o código fica mais otimizado. */
+               /* start end  */
+    /* grid-column: 1 / 4; */
+
+    /* Também funciona da mesma forma que separadamente o start e end, porém, com o span ele irá ficar até o final do elemento definido, ao invés da linha. 
+       Nesse caso foi até o elemento 3. O elemento 3, termina na linha 4, então seria o mesmo que definir 1 / 4. */
+    grid-column: 1 / span 3;
 }
 
 .item6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
 
-    grid-row-start: 4;
-    grid-row-end: 7;
+    grid-column: 1 / span 1;
+
+    /* grid-row-start: 4;
+    grid-row-end: 7; */
+
+    /* Funciona da mesma forma que definir separadamente o start e end, porém é mais facil e o código fica mais otimizado. */
+        /* start end  */
+    grid-row: 4 / 7;
 }
 
 .item7 {
@@ -88,6 +101,17 @@ body {
 }
 
 .item8 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+
+    /* 
+    É uma forma otimizada, que contém todos os alinhamentos da grid em um lugar. Mas é pouco utilizada, pois é um pouco confuso de entender a organização.
+    grid-area:
+    1 - grid-row-start
+    2 - grid-column-start
+    3 - grid-row-end
+    4 - grid-column-end
+    */
+            /* 1   2   3   4 */
+    grid-area: 6 / 2 / 8 / 4;
 }
