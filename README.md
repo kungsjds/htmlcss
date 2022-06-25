@@ -223,3 +223,17 @@ Executar o comando no git:
 git remote set-url origin https://github.com/novaURL
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Removing remote/local commits
+### REMOTE: git push origin +HEAD^:master #or another branch
+
+### LOCAL: git reset --hard HEAD^ (--soft, etc. back 1 commit)
+### LOCAL: git reset --hard HEAD~3 (back 3 commits)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Ignoring committed archives
+
+### Command: git rm --cached (--cached: delete from repository but keep in directory folder)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
